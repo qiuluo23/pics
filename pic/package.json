@@ -1,0 +1,43 @@
+{
+  "name": "pic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec ts-node src/main.ts",
+    "start": "concurrently \"cd frontend && yarn build & cd .. &&  yarn dev\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/koa": "^2.13.8",
+    "@types/koa-bodyparser": "^4.3.10",
+    "@types/koa-favicon": "^2.0.21",
+    "@types/koa-json-error": "^3.1.4",
+    "@types/koa-mount": "^4.0.2",
+    "@types/koa-multer": "^1.0.1",
+    "@types/koa-static": "^4.0.2",
+    "@types/koa2-cors": "^2.0.2",
+    "@types/koa__router": "^12.0.0",
+    "concurrently": "^8.2.0",
+    "dotenv": "^16.3.1",
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.1",
+    "koa-favicon": "^2.1.0",
+    "koa-json-error": "^3.1.2",
+    "koa-mount": "^4.0.0",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^12.0.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/koa-router": "^7.4.4"
+  }
+}
